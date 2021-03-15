@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Open+Sans:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/v4-shims.css">
+    <title>e-mask - Shopping Bag</title>
+</head>
+
+<style>
+    body,
+    html,
+    h1,
+    h2,
+    p {
+        font-family: 'Montserrat', sans-serif;
+        color: rgba(39, 38, 53, 0.9);
+    }
+
+    .logo {
+        text-align: left;
+    }
+
+    .bag {
+        text-align: right;
+    }
+
+    .w3-button {
+        color: rgba(39, 38, 53, 0.7);
+        font-weight: 600;
+    }
+
+    .blueButton {
+        background: linear-gradient(115deg, rgba(72, 144, 246, 1) 0%, rgba(4, 230, 247, 0.9023984593837535) 100%);
+        color: white;
+        width: 30%;
+    }
+
+    .grey {
+        background-color: rgba(72, 144, 246, 0.03);
+    }
+
+    .white {
+        background-color: white;
+    }
+
+    .sidePadding {
+        padding-left: 8.3%;
+        padding-right: 8.3%;
+    }
+
+    .floatLeft {
+        float: left;
+    }
+
+    .clearLeft {
+        clear: left;
+    }
+
+    h1 {
+        font-weight: 600;
+        font-size: 2vw;
+    }
+
+    h1.responsive {
+        font-size: max(2vw, 1.5em, 1.5rem);
+    }
+
+    h2 {
+        font-weight: 600;
+        font-size: 1.5vw;
+    }
+
+    h2.responsive {
+        font-size: max(1.5vw, 1.5em, 1.5rem);
+    }
+
+    ul {
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .footer {
+        background: linear-gradient(115deg, rgba(72, 144, 246, 0.1) 0%, rgba(4, 230, 247, 0.1) 100%);
+        width: 100%;
+    }
+</style>
+
+
+<body>
+
+    <!-- Navigation Bar-->
+
+    <div class="w3-white">
+        <div class="w3-bar w3-padding">
+
+            <div class="w3-col s4 w3-left">
+                <a href="index.html" class="w3-block w3-button w3-large w3-hover-white logo">e-mask</a>
+            </div>
+            <div class="w3-col s3 w3-right">
+                <a href="bag.html" class="w3-block w3-button w3-large w3-hover-white bag"><i class="fas fa-shopping-bag"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!--    Bag -->
+
+    <div class="grey w3-col s12">
+
+        <div class="floatLeft w3-twothird white">
+
+            <!--    Summary -->
+
+            <div class="w3-padding-48 sidePadding white">
+                <div class="w3-col s6 w3-left">
+                    <h1 class="w3-block responsive">Bag Summary</h1>
+                </div>
+                <div class="w3-col s3 w3-right">
+                    <h1 class="w3-block w3-right-align responsive">$299</h1>
+                </div>
+            </div>
+
+            <div class="w3-padding-48 sidePadding white">
+
+                <div class="w3-col s2 w3-left">
+                    <a href="product.html"><img src="image/wearSquare.png" class="w3-image" alt="woman wearing a face mask"></a>
+                </div>
+                <div class="w3-col s3 w3-left">
+                    <p class="w3-block w3-right-align responsive">e-mask - Adults</p>
+                </div>
+                <div class="w3-col s3 w3-left">
+                    <p class="w3-block w3-right-align responsive">1</p>
+                </div>
+                <div class="w3-col s3 w3-right">
+                    <p class="w3-block w3-right-align responsive"><b>$299</b></p>
+                </div>
+            </div>
+
+            <div class="w3-padding-48 sidePadding white clearLeft">
+                <div class="w3-col s6 w3-left">
+                    <h1 class="w3-block responsive">Bag Total</h1>
+                </div>
+                <div class="w3-col s3 w3-right">
+                    <h1 class="w3-block w3-right-align responsive">$299</h1>
+                </div>
+            </div>
+
+            <!--    Checkout -->
+
+            <div class="w3-col s12 w3-center w3-padding-48">
+
+                <div>
+                    <a class="w3-button blueButton w3-large w3-hover-white">Checkout</a>
+                </div>
+            </div>
+
+            <!--  Call to action -->
+
+            <div class="w3-col s12 w3-center w3-padding-48">
+
+                <div class="sidePadding w3-padding-16">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor, sed do eiusmod tempor?</p>
+                </div>
+
+                <div>
+                    <a class="w3-button blueButton w3-large w3-hover-white">Get help</a>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+    <!--    Footer-->
+
+    <div class="w3-center w3-padding-48 footer floatLeft">
+        <h2 class="responsive">Follow us</h2>
+        <i class="fa fa-facebook w3-padding w3-xxlarge"></i>
+        <i class="fa fa-instagram w3-padding w3-xxlarge"></i>
+        <i class="fa fa-twitter w3-padding w3-xxlarge"></i>
+    </div>
+
+</body>
+
+</html>
