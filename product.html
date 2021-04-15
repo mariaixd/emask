@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Open+Sans:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/v4-shims.css">
+    <link rel="icon" type="image/png" href="image/favicon.png">
+    <title>e-mask - Product</title>
+</head>
+
+<style>
+    body,
+    html,
+    h1,
+    h2,
+    p {
+        font-family: 'Montserrat', sans-serif;
+        color: rgba(39, 38, 53, 0.9);
+    }
+
+    .logo {
+        text-align: left;
+    }
+
+    .bag {
+        text-align: right;
+    }
+
+    .w3-button {
+        color: rgba(39, 38, 53, 0.7);
+        font-weight: 600;
+    }
+
+    .blueButton {
+        background: linear-gradient(115deg, rgba(72, 144, 246, 1) 0%, rgba(4, 230, 247, 0.9023984593837535) 100%);
+        color: white;
+        width: 30%;
+    }
+
+    .grey {
+        background-color: rgba(72, 144, 246, 0.03);
+    }
+
+    .sidePadding {
+        padding-left: 8.3%;
+        padding-right: 8.3%;
+    }
+
+    .floatLeft {
+        float: left;
+    }
+
+    .clearLeft {
+        clear: left;
+    }
+
+    h1 {
+        font-weight: 600;
+        font-size: 2vw;
+    }
+
+    h1.responsive {
+        font-size: max(2vw, 1.5em, 1.5rem);
+    }
+
+    h2 {
+        font-weight: 600;
+        font-size: 1.5vw;
+    }
+
+    h2.responsive {
+        font-size: max(1.5vw, 1.5em, 1.5rem);
+    }
+
+    ul {
+        padding: 0;
+        list-style-type: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .footer {
+        background: linear-gradient(115deg, rgba(237, 243, 254, 1) 0%, rgba(237, 252, 254, 1) 100%);
+        width: 100%;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
+</style>
+
+
+<body>
+
+    <!-- Navigation Bar-->
+
+    <div class="w3-white">
+        <div class="w3-bar w3-padding">
+
+            <div class="w3-col s4 w3-left">
+                <a href="index.html" class="w3-block w3-button w3-large w3-hover-white logo" aria-label="Home page">e-mask</a>
+            </div>
+            <div class="w3-col s3 w3-right">
+                <a href="bag.html" class="w3-block w3-button w3-large w3-hover-white bag" aria-label="Shopping bag page"><i class="fas fa-shopping-bag"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Hero Large and small -->
+
+    <div class="w3-hide-medium">
+
+        <img src="image/woman-product.png" id="adultLarge" class="w3-image w3-half show" alt="woman wearing a pink and orange face mask that says 'Hello'">
+        <img src="image/kid-product.png" id="kidLarge" class="w3-image w3-half hide" alt="girl wearing a white face mask that says 'I -heart emoji- you grandma'">
+
+        <div class="w3-half">
+            <div class="w3-padding-24 sidePadding">
+
+                <div class="floatLeft">
+                    <h1 class="responsive">e-mask</h1>
+                    <p>e-mask is a digital face mask that automatically generates and displays closed captions as you speak and provides a fun way to express your personality with text, emoji, and colour. e-mask conveniently comes in two sizes, making it great for children as young as six years old.<br><br></p>
+
+                </div>
+
+                <div>
+                    <p><b>Size</b></p>
+
+                    <div class="w3-col s4 w3-border w3-margin-right" onclick="changeImageToKids()">
+                        <p class="w3-block w3-button w3-large w3-hover-white">Kids</p>
+                    </div>
+                    <div class="w3-col s4 w3-border" onclick="changeImageToAdults()">
+                        <p class="w3-block w3-button w3-large w3-hover-white">Adults</p>
+                    </div>
+
+                </div>
+
+                <div class="clearLeft">
+                    <br>
+                    <p class="w3-col s4 w3-border w3-block w3-button w3-large w3-hover-white">$299</p>
+                    <p><a href="bag.html" class="w3-col s8 w3-block w3-button blueButton w3-large w3-hover-white" aria-label="add to bag and proceed to checkout">Add to Bag</a></p>
+
+                </div>
+
+                <div class="floatLeft">
+                    <br>
+                    <p>10% of all purchases are donated to the <a href="https://www.cpha.ca"><b>Canadian Public Health Association.</b></a><br><br>Do you need this product for accessibility purposes? <a href="mailto:help@emask.com"><b>Request a discount code.</b></a></p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!-- Hero Medium -->
+
+    <div class="w3-hide-large w3-hide-small">
+
+        <img src="image/woman-product.png" id="adultMed" class="w3-image show" alt="woman wearing a pink and orange face mask that says 'Hello'">
+        <img src="image/kid-product.png" id="kidMed" class="w3-image hide" alt="girl wearing a white face mask that says 'I -heart emoji- you grandma'">
+
+        <div>
+            <div class="w3-padding-48 sidePadding">
+
+                <div class="floatLeft">
+                    <h1 class="responsive">e-mask</h1>
+                    <p>e-mask is a digital face mask that automatically generates and displays closed captions as you speak and provides a fun way to express your personality with text, emoji, and colour. e-mask conveniently comes in two sizes, making it great for children as young as six years old.</p>
+
+                </div>
+
+                <div>
+                    <p><b>Size</b></p>
+
+                    <div class="w3-col s4 w3-border w3-margin-right" onclick="changeImageToKids()">
+                        <p class="w3-block w3-button w3-large w3-hover-white">Kids</p>
+                    </div>
+                    <div class="w3-col s4 w3-border" onclick="changeImageToAdults()">
+                        <p class="w3-block w3-button w3-large w3-hover-white">Adults</p>
+                    </div>
+
+                </div>
+
+                <div class="clearLeft">
+                    <br>
+                    <p id="price" class="w3-col s4 w3-border w3-block w3-button w3-large w3-hover-white">$299</p>
+                    <p href="bag.html" class="w3-col s8 w3-block w3-button blueButton w3-large w3-hover-white" aria-label="add to bag and proceed to checkout">Add to Bag</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!--    Details Large-->
+
+    <div class="floatLeft grey w3-padding-48 w3-hide-small w3-hide-medium">
+
+        <div class="w3-padding-48 sidePadding clearLeft">
+            <div>
+                <h2 class="responsive w3-col s3">Overview</h2>
+                <p class="w3-col s7 ">e-mask automatically generates and displays closed captions as you speak. It improves communication in situations such as interacting with someone with a hearing disability or temporary injury or even communicating in a noisy environment. <br><br>e-mask was developed to perform even in the most demanding settings, such as the medical field, where health professionals wear face masks for long periods of time and operate in fast and unforgiving conditions.<br><br>e-mask not only reduces communication issues but also provides a fun way to express your personality with text, emoji, and colour. You can create as many designs as you like and have them compliment your outfit or express your mood. <br><br>e-mask conveniently comes in two sizes, making it great for children as young as six years old. The adjustable straps ensure a comfortable and snug fit every time.<br><br>e-mask is also reusable and easy to clean and sanitize, making it a highly sustainable option.</p>
+            </div>
+
+        </div>
+
+        <div class="w3-padding-48 sidePadding clearLeft">
+            <div>
+                <h2 class="responsive w3-col s3">Highlights</h2>
+                <ul class="w3-col s7">
+                    <li>Automatically generates and displays closed captions as you speak.</li>
+                    <li>Presents an alternative in situations where communication is challenging.</li>
+                    <li>Provides tons of options to customize the captions.</li>
+                    <li>Great for children as young as six years old.</li>
+                    <li>Adjustable straps ensure a comfortable and snug fit.</li>
+                    <li>Easy to clean and sanitize.</li>
+                    <li>Splash-proof.</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="w3-padding-48 sidePadding clearLeft">
+            <div>
+                <h2 class="responsive w3-col s3">Tech Specs</h2>
+                <ul class="w3-col s7">
+                    <li>Flexible OLED screen</li>
+                    <li>Built-in microphone</li>
+                    <li>Speaker</li>
+                    <li>Wi-Fi</li>
+                    <li>Bluetooth</li>
+                    <li>Built-in rechargeable lithium-ion battery</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="w3-padding-48 sidePadding clearLeft">
+            <div>
+                <h2 class="responsive w3-col s3">Requirements</h2>
+                <ul class="w3-col s7">
+                    <li>Connection to a Bluetooth-enabled mobile device.</li>
+                    <li>Access to Wi-Fi or data connection.</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="w3-padding-48 sidePadding clearLeft">
+            <div>
+                <h2 class="clearLeft responsive w3-col s3">What's in the box</h2>
+                <ul class="w3-col s7">
+                    <li>e-mask</li>
+                    <li>Magnetic charging cable</li>
+                    <li>Quickstart guide</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--    Details Medium and Small-->
+
+    <div class="floatLeft grey w3-padding-48 w3-hide-large">
+
+        <div class="w3-padding-32 sidePadding clearLeft">
+            <div>
+                <h2 class="responsive">Overview</h2>
+                <p>e-mask automatically generates and displays closed captions as you speak. It improves communication in situations such as interacting with someone with a hearing disability or temporary injury or even communicating in a noisy environment. <br><br>e-mask was developed to perform even in the most demanding settings, such as the medical field, where health professionals wear face masks for long periods of time and operate in fast and unforgiving conditions.<br><br>e-mask not only reduces communication issues but also provides a fun way to express your personality with text, emoji, and colour. You can create as many designs as you like and have them compliment your outfit or express your mood. <br><br>e-mask conveniently comes in two sizes, making it great for children as young as six years old. The adjustable straps ensure a comfortable and snug fit every time.<br><br>e-mask is also reusable and easy to clean and sanitize, making it a highly sustainable option.</p>
+            </div>
+
+        </div>
+
+        <div class="w3-padding-32 sidePadding clearLeft">
+            <div>
+                <h2 class="responsive">Highlights</h2>
+                <ul>
+                    <li>Automatically generates and displays closed captions as you speak.</li>
+                    <li>Presents an alternative in situations where communication is challenging.</li>
+                    <li>Provides tons of options to customize the captions.</li>
+                    <li>Great for children as young as six years old.</li>
+                    <li>Adjustable straps ensure a comfortable and snug fit.</li>
+                    <li>Easy to clean and sanitize.</li>
+                    <li>Splash-proof.</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="w3-padding-32 sidePadding clearLeft">
+            <div>
+                <h2 class="responsive">Tech Specs</h2>
+                <ul>
+                    <li>Flexible OLED screen</li>
+                    <li>Built-in microphone</li>
+                    <li>Speaker</li>
+                    <li>Wi-Fi</li>
+                    <li>Bluetooth</li>
+                    <li>Built-in rechargeable lithium-ion battery</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="w3-padding-32 sidePadding clearLeft">
+            <div>
+                <h2 class="clearLeft responsive">Requirements</h2>
+                <ul>
+                    <li>Connection to a Bluetooth-enabled mobile device.</li>
+                    <li>Access to Wi-Fi or data connection.</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="w3-padding-32 sidePadding clearLeft">
+            <div>
+                <h2 class="clearLeft responsive">What's in the box</h2>
+                <ul>
+                    <li>e-mask</li>
+                    <li>Magnetic charging cable</li>
+                    <li>Quickstart guide</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!--  Call to action -->
+
+    <div class="w3-col s12 w3-center w3-padding-48">
+
+        <div class="sidePadding w3-padding-16">
+            <p>Have questions or need assistance? We are here to help.</p>
+        </div>
+
+        <div>
+            <a href="mailto:help@emask.com" class="w3-button blueButton w3-large w3-hover-white" aria-label="send an email">Get help</a>
+        </div>
+    </div>
+
+    <!--    Footer-->
+
+    <div class="w3-center w3-padding-48 footer floatLeft">
+        <h2 class="responsive">Follow us</h2>
+        <i class="fa fa-facebook w3-padding w3-xxlarge" role="presentation"></i>
+        <i class="fa fa-instagram w3-padding w3-xxlarge" role="presentation"></i>
+        <i class="fa fa-twitter w3-padding w3-xxlarge" role="presentation"></i>
+    </div>
+
+
+    <!--   Functions-->
+
+    <script language="javascript">
+        function changeImageToKids() {
+            document.getElementById("adultLarge").classList.remove("show");
+            document.getElementById("adultLarge").classList.add("hide");
+            document.getElementById("kidLarge").classList.remove("hide");
+            document.getElementById("kidLarge").classList.add("show");
+
+            document.getElementById("adultMed").classList.remove("show");
+            document.getElementById("adultMed").classList.add("hide");
+            document.getElementById("kidMed").classList.remove("hide");
+            document.getElementById("kidMed").classList.add("show");
+        }
+
+        function changeImageToAdults() {
+            document.getElementById("kidLarge").classList.remove("show");
+            document.getElementById("kidLarge").classList.add("hide");
+            document.getElementById("adultLarge").classList.remove("hide");
+            document.getElementById("adultLarge").classList.add("show");
+
+            document.getElementById("kidMed").classList.remove("show");
+            document.getElementById("kidMed").classList.add("hide");
+            document.getElementById("adultMed").classList.remove("hide");
+            document.getElementById("adultMed").classList.add("show");
+        }
+    </script>
+</body>
+
+</html>
